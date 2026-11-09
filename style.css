@@ -1,0 +1,284 @@
+/* Reset Dasar & Variabel Warna */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* Header Styling (CEO) */
+header {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #10b981;
+}
+
+header nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #10b981;
+}
+
+/* Hero Section (PM) */
+#hero-section {
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #cbd5e1;
+}
+
+.features-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.cta-button {
+    background-color: #10b981;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #059669;
+    transform: scale(1.02);
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}
+
+/* Catalog Section (PM) */
+#catalog-section {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #1e293b;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.catalog-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.catalog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card.featured {
+    border-color: #10b981;
+    position: relative;
+}
+
+.catalog-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #10b981;
+    margin-bottom: 1rem;
+}
+
+.unit {
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: normal;
+}
+
+.desc {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.promo-tag {
+    display: inline-block;
+    background: #d1fae5;
+    color: #065f46;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* Calculator Section (SE) */
+#calc-section {
+    max-width: 600px;
+    margin: 4rem auto;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    border-color: #10b981;
+}
+
+#hitungBtn {
+    width: 100%;
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#hitungBtn:hover {
+    background-color: #1e293b;
+}
+
+#hitungBtn:active {
+    transform: scale(0.98);
+}
+
+.result-box {
+    margin-top: 2rem;
+    background: #f1f5f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #10b981;
+}
+
+.result-box p {
+    margin-bottom: 0.5rem;
+    color: #475569;
+}
+
+.result-box h3 {
+    color: #0f172a;
+    margin-top: 0.5rem;
+}
+
+/* Footer Section (CEO) */
+footer {
+    background: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Media Query (UI/UX) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}
