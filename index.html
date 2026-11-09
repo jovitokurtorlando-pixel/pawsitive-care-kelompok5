@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsitive Care - Penitipan & Perawatan Hewan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. BAGIAN HEADER (Peran: CEO) -->
+    <header id="header-section" data-role="CEO">
+        <div class="nav-container">
+            <h1 class="logo">Pawsitive<span>Care</span></h1>
+            <nav>
+                <a href="#hero-section">Beranda</a>
+                <a href="#catalog-section">Katalog</a>
+                <a href="#calc-section">Kalkulator</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. BAGIAN HERO (Peran: Product Manager / PM) -->
+    <section id="hero-section" data-role="PM">
+        <div class="hero-content">
+            <h2>Rumah Kedua yang Aman & Nyaman untuk Hewan Kesayangan Anda</h2>
+            <p>Layanan profesional perawatan, pembersihan, dan penitipan hewan peliharaan dengan pengawasan dokter hewan berpengalaman.</p>
+            <div class="features-list">
+                <div class="feature-item">🐾 100% Pengawasan 24 Jam</div>
+                <div class="feature-item">🍖 Makanan & Vitamin Premium</div>
+                <div class="feature-item">🧼 Fasilitas Steril & Higienis</div>
+            </div>
+            <a href="#calc-section" class="cta-button">Mulai Simulasi Biaya</a>
+        </div>
+    </section>
+
+    <!-- 3. BAGIAN KATALOG (Peran: Product Manager / PM) -->
+    <section id="catalog-section" data-role="PM">
+        <h2 class="section-title">Katalog Paket Layanan</h2>
+        <div class="catalog-grid">
+            <!-- Paket 1 -->
+            <div class="catalog-card">
+                <h3>Paket Mandi Bersih</h3>
+                <p class="price">Rp 75.000 <span class="unit">/ hari / hewan</span></p>
+                <p class="desc">Mandi antiseptik, potong kuku, pembersihan telinga, dan pengeringan profesional.</p>
+                <span class="promo-tag">Kode Promo: PAW75</span>
+            </div>
+            <!-- Paket 2 -->
+            <div class="catalog-card featured">
+                <h3>Paket Perawatan Lengkap</h3>
+                <p class="price">Rp 150.000 <span class="unit">/ hari / hewan</span></p>
+                <p class="desc">Mandi lengkap, cukur bulu rapi, vitamin bulu, scaling gigi ringan, dan cek kesehatan.</p>
+                <span class="promo-tag">Kode Promo: PAW150</span>
+            </div>
+            <!-- Paket 3 -->
+            <div class="catalog-card">
+                <h3>Paket Penginapan Harian Hewan</h3>
+                <p class="price">Rp 250.000 <span class="unit">/ hari / hewan</span></p>
+                <p class="desc">Kandang privat ber-AC, makanan premium 3x sehari, mainan interaktif, dan laporan video harian.</p>
+                <span class="promo-tag">Kode Promo: PAW250</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BAGIAN KALKULATOR (Peran: Software Engineer / SE) -->
+    <section id="calc-section" data-role="SE">
+        <h2 class="section-title">Kalkulator Simulasi Biaya</h2>
+        <div class="calculator-container">
+            <div class="form-group">
+                <label for="paketSelect">Pilih Paket Layanan:</label>
+                <select id="paketSelect">
+                    <option value="75000">Paket Mandi Bersih - Rp 75.000</option>
+                    <option value="150000">Paket Perawatan Lengkap - Rp 150.000</option>
+                    <option value="250000">Paket Penginapan Harian Hewan - Rp 250.000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="jumlahInput">Jumlah Hari / Jumlah Hewan:</label>
+                <input type="number" id="jumlahInput" min="1" value="1" placeholder="Masukkan angka...">
+            </div>
+
+            <div class="form-group">
+                <label for="promoInput">Kode Promo (Opsional):</label>
+                <input type="text" id="promoInput" placeholder="Contoh: BISDIG atau diskon khusus">
+            </div>
+
+            <button id="hitungBtn">Hitung Total Biaya</button>
+
+            <div id="resultBox" class="result-box">
+                <p>Harga Awal: <span id="valHargaAwal">Rp 0</span></p>
+                <p>Potongan Diskon: <span id="valDiskon">Rp 0</span></p>
+                <h3>Total Bayar Akhir: <span id="valTotal">Rp 0</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. BAGIAN FOOTER (Peran: CEO) -->
+    <footer id="footer-section" data-role="CEO">
+        <p>&copy; 2026 Pawsitive Care. Kelas WebDev D - Kelompok 5. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Pemanggilan Skrip JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
